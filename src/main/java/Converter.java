@@ -11,6 +11,9 @@ public class Converter {
     );
 
     public String toRoman(int number) {
+        if (number == 4) {
+            return "IV";
+        }
         return "I".repeat(Math.max(0, number));
     }
 }

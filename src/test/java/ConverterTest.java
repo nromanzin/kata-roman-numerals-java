@@ -25,5 +25,10 @@ public class ConverterTest {
     public void shouldReturnIIIWhenGiven3() {
         assertEquals("III", converter.toRoman(3));
     }
+
+    @Test
+    public void shouldReturnIVWhenGiven4() {
+        assertEquals("IV", converter.toRoman(4));
+    }
 }
 
