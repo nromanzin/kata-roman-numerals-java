@@ -11,10 +11,6 @@ public class Converter {
     );
 
     public String toRoman(int number) {
-        StringBuilder roman = new StringBuilder();
-        for (int i = 0; i < number; i++) {
-            roman.append("I");
-        }
-        return roman.toString();
+        return "I".repeat(Math.max(0, number));
     }
 }
