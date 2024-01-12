@@ -35,5 +35,30 @@ public class ConverterTest {
     public void shouldReturnVWhenGiven5() {
         assertEquals("V", converter.toRoman(5));
     }
+
+    @Test
+    public void shouldReturnVIWhenGiven6() {
+        assertEquals("VI", converter.toRoman(6));
+    }
+
+    @Test
+    public void shouldReturnVIIWhenGiven7() {
+        assertEquals("VII", converter.toRoman(7));
+    }
+
+    @Test
+    public void shouldReturnVIIIWhenGiven8() {
+        assertEquals("VIII", converter.toRoman(8));
+    }
+
+    @Test
+    public void shouldReturnIXWhenGiven9() {
+        assertEquals("IX", converter.toRoman(9));
+    }
+
+    @Test
+    public void shouldReturnXWhenGiven10() {
+        assertEquals("X", converter.toRoman(10));
+    }
 }
 
