@@ -60,5 +60,16 @@ public class ConverterTest {
     public void shouldReturnXWhenGiven10() {
         assertEquals("X", converter.toRoman(10));
     }
+
+    @Test
+    public void shouldReturnEdgeCaseRomanNumbers() {
+        assertEquals("XIV", converter.toRoman(14));
+        assertEquals("XVIII", converter.toRoman(18));
+        assertEquals("XXIV", converter.toRoman(24));
+        assertEquals("XLIV", converter.toRoman(44));
+        assertEquals("XCIX", converter.toRoman(99));
+        assertEquals("CXXVIII", converter.toRoman(128));
+        assertEquals("CMXCIX", converter.toRoman(999));
+    }
 }
 
